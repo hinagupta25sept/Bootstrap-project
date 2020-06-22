@@ -77,11 +77,19 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-sm col-md-sm align-self-centers">
+          <div class="col-12 col-sm align-self-centers">
             <img src="img/logo.png" class="img-fluid" />
           </div>
-          <div class="col-sm col-md-sm align-self-centers">
-            <a type="button" href="#scroll" class="btn btn-warning btn-block">
+          <div class="col-12 col-sm align-self-centers">
+            <a
+              role="button"
+              class="btn btn-warning btn-block"
+              data-toggle="tooltip"
+              data-html="true"
+              title="or Call us at<br><strong>+852 12345678</strong>"
+              data-placement="bottom"
+              href="#scroll"
+            >
               Reserve Table
             </a>
           </div>
@@ -383,5 +391,10 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
